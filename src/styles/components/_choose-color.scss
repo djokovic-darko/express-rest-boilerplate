@@ -1,0 +1,13 @@
+.choose-color {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: rem(3);
+    margin-bottom: rem(5);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

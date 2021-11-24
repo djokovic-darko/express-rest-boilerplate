@@ -1,0 +1,27 @@
+.find-perfect {
+  padding: rem(90) 0;
+
+  p {
+    margin-bottom: rem(15);
+    font-size: rem(12);
+    line-height: line-height(12, 12);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $divider-grey;
+  }
+
+  h2 {
+    max-width: rem(440);
+    font-size: rem(40);
+    line-height: line-height(40, 50);
+    color: $white;
+  }
+
+  &__cta {
+    margin-top: rem(168);
+
+    .btn {
+      min-width: rem(206);
+    }
+  }
+}

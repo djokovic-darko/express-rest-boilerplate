@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "support-hero": {
+      "type": "support-hero",
+      "settings": {
+      }
+    },
+     "support-grid": {
+      "type": "support-grid",
+      "settings": {
+      }
+    },
+     "still-have-questions": {
+      "type": "still-have-questions",
+      "settings": {
+      }
+    },
+    "knowledge": {
+      "type": "knowledge",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "support-hero",
+    "support-grid",
+    "still-have-questions",
+    "knowledge"
+  ]
+}
+ 

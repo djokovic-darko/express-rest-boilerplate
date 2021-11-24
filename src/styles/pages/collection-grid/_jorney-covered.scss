@@ -1,0 +1,61 @@
+.journey-covered {
+  padding: rem(120) 0;
+  &__title {
+    max-width: rem(400);
+    margin: 0 auto;
+    padding-bottom: rem(60);
+    text-align: center;
+    .h2 {
+      font-size: rem(40);
+      line-height: rem(54);
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-16);
+  }
+  &__item {
+    flex: 0 0 50%;
+    padding: rem(16);
+  }
+  &__item-content {
+    position: relative;
+    .media-wrapper {
+      padding-bottom: 66.86%;
+    }
+  }
+  &__text {
+    max-width: rem(288);
+    width: 100%;
+    position: absolute;
+    bottom: rem(22);
+    left: rem(30);
+    p {
+      font-size: rem(20);
+      line-height: rem(30);
+      font-weight: 700;
+      color: $white;
+      padding-bottom: rem(10);
+    }
+    a {
+      font-size: rem(14);
+      line-height: rem(32);
+      font-weight: 700;
+      color: $white;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      transition: $t-hover;
+      &:hover {
+        opacity: 0.5;
+      }
+      .icon {
+        display: inline-block;
+        width: rem(16);
+        height: rem(13);
+        margin: rem(-8) 0 0 rem(3);
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "cg-hero": {
+      "type": "cg-hero"
+    },
+    "top-quality": {
+      "type": "top-quality"
+    },
+    "text-image": {
+      "type": "text-image"
+    },
+    "journey-covered": {
+      "type": "journey-covered"
+    },
+    "e-bikes-info": {
+      "type": "e-bikes-info"
+    }
+   
+  },
+  "order": [
+    "cg-hero",
+    "top-quality",
+    "text-image",
+    "journey-covered",
+    "e-bikes-info"
+  ]
+}

@@ -1,0 +1,17 @@
+.videos-tab {
+  background-color: $machine-grey;
+  padding: rem(90) 0;
+  &__title {
+    max-width: rem(360);
+    width: 100%;
+    padding-bottom: rem(54);
+    .h2 {
+      font-size: rem(40);
+      line-height: rem(56);
+      color: $white;
+    }
+  }
+  &__inner {
+    min-height: rem(482);
+  }
+}

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+
+<section class="compare-bikes">
+    <div class="container container--small">
+        <a href="" class="compare-bikes__go-back">
+         {% render 'icon', icon: 'arrow-left' %}
+           Go Back
+        </a>
+        <div class="compare-bikes__title">
+          <h1>Compare E-Bikes</h1>
+        </div>
+        <ul class="compare-bikes__nav">
+             <li>Comparing 3 Bikes</li>
+             <li class="active">Show All Features</li>
+             <li>Show Differences Only</li>
+        </ul>
+        <div class="compare-bikes__inner">
+          <div class="compare-bikes__item">
+            {% render  'component-product-card.liquid'%}
+          </div>
+            <div class="compare-bikes__item">
+            {% render  'component-product-card.liquid'%}
+          </div>
+            <div class="compare-bikes__item">
+            {% render  'component-product-card.liquid'%}
+          </div>
+            <div class="compare-bikes__item">
+            {% render  'component-product-card.liquid'%}
+          </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.page.name",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

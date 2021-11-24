@@ -1,0 +1,35 @@
+.fat-tire-banner {
+  padding-top: rem(90);
+  background-color: $grey-light-7;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: rem(102);
+
+    h2 {
+      max-width: rem(365);
+      font-size: rem(40);
+      line-height: line-height(40, 56);
+      font-weight: 700;
+      color: $machine-grey;
+    }
+
+    a {
+      font-size: rem(14);
+      line-height: line-height(14, 32);
+      font-weight: 700;
+      color: $magnum-black;
+    }
+    .icon--arrow-up-right {
+      margin-bottom: rem(5);
+    }
+  }
+
+  &__image {
+    .media-wrapper {
+      padding-bottom: 46.3%;
+    }
+  }
+}

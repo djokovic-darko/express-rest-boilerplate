@@ -1,0 +1,16 @@
+.cg-hero {
+  min-height: rem(610);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &__title {
+    color: $white;
+    font-size: rem(64);
+    line-height: rem(64);
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

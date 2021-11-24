@@ -1,0 +1,126 @@
+.footer {
+  background-color: $machine-grey;
+
+  &__inner {
+    padding: rem(90) 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: '';
+      width: 200vw;
+      height: 1px;
+      background: $grey-light;
+      position: absolute;
+      left: -100vw;
+      bottom: 0;
+    }
+  }
+
+  &__col {
+    &:first-child {
+      max-width: rem(570);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__col-item {
+    .h6 {
+      color: $white;
+      font-size: rem(15);
+      line-height: rem(16);
+      padding-bottom: rem(20);
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+
+      a {
+        color: $grey-light-2;
+        font-size: rem(14);
+        line-height: rem(24);
+        transition: $t-hover;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__form-inner {
+    max-width: rem(290);
+    width: 100%;
+
+    a {
+      display: block;
+      margin-top: rem(-11);
+    }
+
+    .icon {
+      path {
+        fill: $white;
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: rem(16);
+      line-height: rem(26);
+      padding-bottom: rem(24);
+    }
+  }
+
+  &__form {
+    .input-field {
+      margin-bottom: rem(15);
+
+      input {
+        border: 1px solid #8a9093;
+        border-radius: 40px;
+        padding: rem(18) rem(25);
+        font-size: rem(15);
+        color: $grey-light;
+      }
+    }
+
+    .btn {
+      min-width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(13);
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(36) 0;
+    p {
+      display: block;
+      font-size: rem(32);
+      line-height: rem(42);
+      color: $white;
+      max-width: rem(470);
+      width: 100%;
+      font-weight: 700;
+    }
+  }
+  &__social {
+    display: flex;
+    li {
+      &:not(:last-child) {
+        margin-right: rem(10);
+      }
+      a {
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}

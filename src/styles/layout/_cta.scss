@@ -1,0 +1,136 @@
+.cta {
+  background-color: $white;
+  padding: rem(15) rem(63);
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: $t-hover;
+  &.enabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__col-left,
+  &__col-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-left {
+    justify-content: space-between;
+    @include media-breakpoint-up(xmd) {
+      justify-content: flex-start;
+    }
+
+    .cta__item {
+      a {
+        margin-right: rem(32);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: rem(15);
+      line-height: rem(26);
+      font-weight: 700;
+      position: relative;
+      display: block;
+
+      &:not(:last-child)::after {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $divider-grey;
+        position: absolute;
+        right: rem(-16);
+      }
+    }
+
+    p {
+      font-size: rem(15);
+      line-height: rem(15);
+      font-weight: 700;
+
+      span {
+        display: inline-block;
+        color: $grey-light;
+        font-weight: 400;
+
+        &:first-child {
+          margin: 0 rem(15);
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    margin-right: rem(24);
+  }
+
+  &__col-right {
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      align-items: center;
+      margin-right: rem(18);
+
+      li {
+        &:first-child {
+          margin-right: rem(62);
+          ::after {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: $divider-grey;
+            position: absolute;
+            right: rem(-31);
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          line-height: rem(32);
+          font-size: rem(14);
+          display: flex;
+          .icon {
+            margin: rem(3) 0 0 rem(5);
+            width: 13px;
+            height: 16px;
+          }
+          &:not(:last-child)::after {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: $divider-grey;
+            position: absolute;
+            right: rem(-16);
+          }
+        }
+      }
+    }
+
+    .btn {
+      min-width: rem(180);
+      font-size: rem(13);
+      font-weight: 700;
+    }
+  }
+}

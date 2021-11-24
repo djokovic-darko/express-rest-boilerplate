@@ -1,0 +1,225 @@
+@import 'nouislider/dist/nouislider.css';
+
+.measures {
+  padding: rem(80) 0 rem(82);
+  background-color: $machine-grey;
+  position: relative;
+
+  &::after {
+    display: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #494647;
+  }
+
+  &.active {
+    &::after {
+      display: block;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-left {
+    width: 50%;
+
+    .media-wrapper {
+      max-width: rem(396);
+      padding-bottom: 138.88%;
+      margin-right: auto;
+      img {
+        z-index: 1;
+      }
+    }
+  }
+
+  &__col-right {
+    padding-left: rem(106);
+    width: 50%;
+
+    h2 {
+      margin-bottom: rem(10);
+      font-size: rem(40);
+      line-height: line-height(40, 56);
+      font-weight: 700;
+      color: $off-white;
+    }
+
+    p {
+      font-size: rem(15);
+      line-height: line-height(15, 25);
+      color: $off-white;
+
+      max-width: rem(328);
+    }
+  }
+
+  &__tab {
+    margin: rem(30) 0 rem(35);
+    border-radius: rem(7);
+    background-color: $grey-light-1;
+    min-height: rem(255);
+  }
+
+  &__tab-nav {
+    li {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: rem(5.5) 0;
+      color: $grey-light;
+      font-size: rem(17);
+      line-height: line-height(17, 26);
+      font-weight: 700;
+      border: 2px solid transparent;
+      background-color: $grey-light-5;
+      cursor: pointer;
+
+      &:first-child {
+        border-top-left-radius: rem(7);
+      }
+      &:last-child {
+        border-top-right-radius: rem(7);
+      }
+
+      &.active {
+        color: $cyan;
+        border-color: $cyan;
+        background-color: $machine-grey;
+      }
+    }
+  }
+
+  &__tabs {
+    display: none;
+    flex-wrap: wrap;
+    padding: rem(24) rem(20) rem(20);
+
+    .icon--warning {
+      margin: rem(5) rem(8) 0 0;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    p {
+      line-height: line-height(15, 24);
+    }
+  }
+
+  &__select-measures {
+    width: 100%;
+    padding-bottom: rem(24);
+    display: flex;
+
+    .noUiSlider-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: rem(15);
+        line-height: line-height(15, 14);
+        color: $white;
+      }
+
+      .height-wrapper {
+        display: flex;
+        align-items: center;
+        padding: rem(17) rem(21);
+        margin-left: rem(20);
+        border: 1px solid $white;
+        border-radius: rem(40);
+
+        .slider-range-value {
+          margin-right: rem(3);
+        }
+      }
+      .noUi-horizontal {
+        height: 2px;
+        background-color: #8a9093;
+      }
+      .noUi-handle {
+        width: rem(32);
+        height: rem(32);
+        border-radius: 50%;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: rem(6);
+          height: rem(6);
+          border-radius: 50%;
+          top: 6.5px;
+          // right: 0;
+          transform: translate(0%, -50%);
+          background-color: $white;
+          z-index: 1;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          width: rem(32);
+          height: rem(32);
+          border-radius: 50%;
+          // top: 50%;
+          right: 0;
+          transform: translate(-50%, -50%);
+          background-color: $white;
+          opacity: 0.1;
+          z-index: -1;
+        }
+      }
+      .noUi-connects {
+        border-radius: rem(20);
+        .noUi-connect {
+          background-color: $white !important;
+        }
+      }
+    }
+
+    .noUi-target {
+      width: 100%;
+      box-shadow: none;
+      border: none;
+      border-radius: rem(20);
+    }
+  }
+  &__results {
+    display: flex;
+
+    .icon {
+      margin-top: rem(1);
+      margin-right: rem(15);
+    }
+
+    h4 {
+      margin-bottom: rem(5);
+      font-size: rem(17);
+      line-height: line-height(17, 26);
+      font-weight: 700;
+      color: $white;
+    }
+    p {
+      color: $grey-light;
+
+      a {
+        font-weight: 700;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

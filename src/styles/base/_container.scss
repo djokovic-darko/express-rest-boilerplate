@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  padding: 0 rem(64);
+  margin: 0 auto;
+
+  @include media-breakpoint-down(md) {
+    padding: 0 rem(20);
+  }
+  &--middle {
+    padding: 0 11.127vw;
+  }
+  &--small {
+    padding: 0 12.372vw;
+  }
+}

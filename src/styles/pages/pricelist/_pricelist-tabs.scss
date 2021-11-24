@@ -1,0 +1,86 @@
+.pl-tabs {
+  margin-top: rem(-40);
+
+  &__list {
+    display: flex;
+    min-height: rem(40);
+    margin-bottom: rem(40);
+  }
+
+  &__btn {
+    font-size: rem(18);
+    line-height: rem(22);
+    font-weight: 700;
+    color: $grey-light;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $black;
+    }
+    &::after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: rem(60);
+    }
+
+    &.active {
+      color: $black;
+
+      &::after {
+        height: 3px;
+        background-color: $cyan;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__item-content {
+    color: #262626;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    height: auto;
+    overflow: hidden;
+    display: none;
+
+    &.active {
+      opacity: 1;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .single-gallery-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 101;
+    }
+
+    .close-single-gallery {
+      width: rem(50);
+      height: rem(50);
+      border-radius: 50%;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: $t-hover;
+    }
+  }
+}

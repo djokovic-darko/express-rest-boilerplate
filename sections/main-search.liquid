@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ 'section-main-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-main-search.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="search o-container --medium"></div>
+
+
+{% schema %}
+{
+  "name": "t:sections.search.name",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

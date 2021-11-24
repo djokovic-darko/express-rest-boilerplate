@@ -1,0 +1,50 @@
+<section class="measures active">
+    <div class="container container--small">
+        <div class="measures__inner">
+            <div class="measures__col-left">
+              <div class="media-wrapper media-wrapper--center">
+                <img src="https://via.placeholder.com/379x800.png?text=Pleaceholder" loading="lazy" width="" height=""/>
+              </div>
+            </div>
+            <div class="measures__col-right">
+                <h2>Does it fit you?</h2>
+                <p>We suggest Nomad for riders 5’6″ and taller. However, the bike won’t be suitable for all people the same. Let’s find out if this bike fits you by following our simple calculator below.</p>
+                <div class="measures__tab js-tabs-measures">
+                    <ul class="measures__tab-nav u-d-flex u-align-center u-justify-center">
+                        <li class="js-tab-btn active" data-name="measures-leg">Measure Inner Leg</li>
+                         <li class="js-tab-btn" data-name="measures-height">Measure Height</li>
+                    </ul>
+                    <div class="measures__tabs js-tab-content measures-leg active">
+                         <div class="measures__select-measures">
+                           <div class="noUiSlider-wrapper">
+                             <div class="slider-range js-select-measures"></div>
+                             <span class="height-wrapper"><span class="slider-range-value js-select-value"></span>  in</span>
+                          </div>
+                         </div>
+                         {% render 'icon', icon: 'warning' %}
+                         <p>Measure your inseam. Stand with your feet six inches apart, and measure up to your pubic bone from the inside of your foot (where your leg meets your hip in your crotch)."</p>
+                    </div>
+                      <div class="measures__tabs measures-height js-tab-content">
+                      <!-- // TODO: Add "noUiSlider for height" -->
+                         {% render 'icon', icon: 'warning' %}
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae dolore alias nostrum perferendis suscipit aliquam magni error reprehenderit doloribus!</p>
+                    </div>
+                </div>
+                <div class="measures__results">
+                     {% render 'icon', icon: 'correctly' %}
+                     <div class="measures__message">
+                         <h4>It’s a perfect match.</h4>
+                         <p>We include an easy to use toolkit and an assembly manual to make the remaining 15% easy.</p>
+                     </div>
+                </div>
+                   <div class="measures__results" style="display: none;">
+                     {% render 'icon', icon: 'incorrectly' %}
+                     <div class="measures__message">
+                         <h4>Not the right size.</h4>
+                         <p>We include an easy to use toolkit and an assembly manual to make <a href="">check out bikes which fit.</a></p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>

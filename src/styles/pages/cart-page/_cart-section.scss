@@ -1,0 +1,108 @@
+.cart {
+  &__headline {
+    padding-top: rem(40);
+
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+
+    h1,
+    & * {
+      font-size: rem(18);
+      font-family: $font-light;
+      letter-spacing: 1px;
+      line-height: line-height(18, 20);
+
+      span {
+        font-family: $font-bold;
+      }
+    }
+  }
+
+  &__estimation {
+    max-width: rem(500);
+    width: 100%;
+    margin: 0 auto;
+
+    &-btn-wrapper {
+      padding: rem(30) 0;
+
+      @include media-breakpoint-up(md) {
+        padding: rem(40) 0 rem(35);
+      }
+
+      .btn {
+        font-size: rem(14);
+      }
+    }
+
+    &-info {
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+
+      p {
+        font-size: rem(14);
+        font-family: $headline-font;
+
+        &:first-of-type {
+          padding-bottom: rem(30);
+        }
+      }
+    }
+  }
+
+  &__review {
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+
+    span {
+      font-family: $font-light;
+      font-size: rem(9);
+      line-height: line-height(9, 16);
+    }
+
+    &-icon {
+      position: relative;
+      padding: 0 rem(14);
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: rem(14);
+        height: rem(20);
+        transform: translateY(-50%);
+        background-image: url('/src/assets/bolt.png');
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        left: rem(-5);
+      }
+
+      &::after {
+        right: rem(-5);
+      }
+    }
+  }
+
+  &__selection {
+    padding-top: rem(40);
+
+    .btn {
+      width: rem(190);
+    }
+  }
+  .btn__text {
+    font-family: $regular-font;
+    font-family: MaisonNeueMono-Regular;
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+}

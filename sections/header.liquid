@@ -1,0 +1,297 @@
+<!-- {{ 'component-dark-mode-button.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-dark-mode-button.js' | asset_url -}}" defer></script> -->
+
+<header class="header js-header">
+    {% render 'announcment-bar' %}
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="">
+                {% render 'icon', icon: 'logo' %}
+            </a>
+        </div>
+        <ul class="nav-bar js-nav-bar">
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">E-Bikes</a>
+                <div class="header__nav-dropdown">
+                    <div class="header__nav-dropdown-inner" style="background: url('https://via.placeholder.com/1920x579') no-repeat; background-size:cover;background-position:center center;">
+                        <div class="header__nav-dropdown-col-left js-nav-category-tabs">
+                            <a class="u-uppercase view-all" href="#">view all
+                                {% render 'icon', icon: 'arrow-up-right' %}
+                            </a>
+                            <ul class="header__nav-dropdown-tabs-list js-nav-category-tabs">
+                                <li class="js-tab-btn active" data-name="by-category">By Category</li>
+                                <li class="js-tab-btn" data-name="by-use">by Use</li>
+                            </ul>
+                            <div class="header__nav-dropdown-tabs js-tab-content by-category active">
+                                <ul class="header__nav-dropdown-inner-list">
+                                    <li>
+                                        <a href="">Touring</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Cruiser</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Fat Tire</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Trail</a>
+                                    </li>
+                                    <li>
+                                        <a class="new" href="">Folding</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Cargo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__nav-dropdown-tabs js-tab-content by-use">
+                                <ul class="header__nav-dropdown-inner-list">
+                                    <li>
+                                        <a href="">Recreation</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Healthy Lifestyle</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Commuting & Errands</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Work & Deliveries</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__nav-dropdown-col-right">
+                            <div class="header__nav-dropdown-col-right-item">
+                                <h2>Everyone has a perfect Magnum match.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <button class="btn btn--outline">Help Me Choose</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">Shop</a>
+                <div class="header__nav-dropdown">
+                    <div class="header__nav-dropdown-inner js-tabs-shop" style="background: url('https://via.placeholder.com/1920x579') no-repeat; background-size:cover;background-position:center center;">
+                        <div class="header__nav-dropdown-col-left">
+                            <h3>Make Your Ride Complete</h3>
+                            <div class="header__nav-dropdown-shop-tab">
+                                <ul class="header__nav-dropdown-inner-list">
+                                    <li>
+                                        <a class="js-tab-btn active" data-name="parts" href="">Parts & Upgrades</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-tab-btn" data-name="gear" href="">Gear & Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-tab-btn" data-name="swag" href="">Swag</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__nav-dropdown-col-right">
+                            <div class="header__nav-dropdown-col-right-shop-item js-tab-content parts active">
+                                <h2>Parts & Upgrades</h2>
+                                <ul>
+                                    <li><a href="">Batteries</a></li>
+                                    <li><a href="">Controllers</a></li>
+                                    <li><a href="">Displays</a></li>
+                                    <li><a href="">Throttles</a></li>
+                                    <li><a href="">Inner Tubes</a></li>
+                                    <li><a href="">Tires</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__nav-dropdown-col-right-shop-item js-tab-content gear">
+                                <h2>Gear & Accessories</h2>
+                                <ul>
+                                    <li>
+                                        <a href="">Helmets</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Locks</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Phone Mounts</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lights</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bottle Cages</a>
+                                    </li>
+                                </ul>
+                                <a class="u-uppercase view-all" href="#">view all
+                                    {% render 'icon', icon: 'arrow-up-right' %}
+                                </a>
+                            </div>
+                            <div class="header__nav-dropdown-col-right-shop-item js-tab-content swag">
+                                <h2>Swag</h2>
+                                <ul>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Hats</a></li>
+                                    <li><a href="">Hoodies</a></li>
+                                    <li><a href="">Stickers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">Learn</a>
+                <div class="header__nav-dropdown">
+                    <div class="header__nav-dropdown-inner-slider">
+                        <div class="header__nav-dropdown-slider-title">
+                            <h2>The Magnum Academy</h2>
+                            <a class="u-uppercase view-all" href="#">Go To academy hub
+                                {% render 'icon', icon: 'arrow-up-right' %}
+                            </a>
+                        </div>
+                        <div class="header__nav-dropdown-slider-item ">
+                            <div class="header__nav-dropdown-swiper-wrapper js-header-mouse-follow">
+                                <div class="swiper-container js-header-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                           <a href="">
+                                              <div class="media-wrapper">
+                                                <img height="" loading="lazy" src="https://via.placeholder.com/379x800.jpg?text=Slide1" width=""/>
+                                                <div class="header__nav-dropdown-slider-item-content">
+                                                    <h3>E-Bikes 101</h3>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <a href="">
+                                              <div class="media-wrapper">
+                                                <img height="" loading="lazy" src="https://via.placeholder.com/379x800.jpg?text=Slide2" width=""/>
+                                                <div class="header__nav-dropdown-slider-item-content">
+                                                    <h3>E-Bikes 101</h3>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <a href="">
+                                              <div class="media-wrapper">
+                                                <img height="" loading="lazy" src="https://via.placeholder.com/379x800.jpg?text=Slide3" width=""/>
+                                                <div class="header__nav-dropdown-slider-item-content">
+                                                    <h3>E-Bikes 101</h3>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <a href="">
+                                              <div class="media-wrapper">
+                                                <img height="" loading="lazy" src="https://via.placeholder.com/379x800.jpg?text=Slide4" width=""/>
+                                                <div class="header__nav-dropdown-slider-item-content">
+                                                    <h3>E-Bikes 101</h3>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                           <a href="">
+                                              <div class="media-wrapper">
+                                                <img height="" loading="lazy" src="https://via.placeholder.com/379x800.jpg?text=Slide5" width=""/>
+                                                <div class="header__nav-dropdown-slider-item-content">
+                                                    <h3>E-Bikes 101</h3>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cursor js-cursor">
+                                    {% render 'icon', icon: 'icon-cursor' %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">Stories</a>
+            </li>
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">Why Magnum</a>
+                <div class="header__nav-dropdown">
+                    <div class="header__nav-dropdown-inner is-active">
+                        <div class="header__nav-dropdown-col-left" style="background: url('https://via.placeholder.com/1000x579') no-repeat; background-size:cover;background-position:center center;">
+                            <ul class="header__nav-dropdown-inner-list header__nav-dropdown-inner-list--white">
+                                <li>
+                                    <a href="">Our Story</a>
+                                </li>
+                                <li>
+                                    <a href="">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="">How Are They Made?</a>
+                                </li>
+                                <li>
+                                    <a href="">Wall of Love</a>
+                                </li>
+                                <li>
+                                    <a href="">What’s New?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__nav-dropdown-col-right">
+                            <div class="header__nav-dropdown-col-right-magnum-item">
+                                <h2>
+                                    Ride Faster.
+                                                              Ride Stronger.
+                                                              Ride Further.
+                                </h2>
+                                <ul>
+                                    <li>
+                                        {% render 'icon', icon: 'box' %}
+                                        <span>250+</span>
+                                        Authorized dealers and service points across the U.S.
+                                    </li>
+                                    <li>
+                                        {% render 'icon', icon: 'box' %}
+                                        <span>10,000+</span>
+                                        Community of Magnum Riders
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a class="line-link line-link--grow u-uppercase" href="">Support</a>
+            </li>
+        </ul>
+        <ul class="header__right-list">
+            <li>
+                <a href="">
+                    {% render 'icon', icon: 'account' %}
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    {% render 'icon', icon: 'search' %}
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    {% render 'icon', icon: 'cart' %}
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+{% schema %}
+
+{
+    "name": "t:sections.header.name",
+    "settings": []
+}
+
+{% endschema %}

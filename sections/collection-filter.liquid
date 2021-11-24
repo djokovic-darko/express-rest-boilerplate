@@ -1,0 +1,105 @@
+  <script type="module" src="{{- 'component-Collection-filter.js'| asset_url -}}"></script>
+    {{ 'component-productPhotoGallery.css' | asset_url | stylesheet_tag }}
+
+    <section class="collection-filter">
+    <div class="container container--small">
+        <div class="collection-filter__nav">
+            <div class="collection-filter__col">
+                <a class="collection-filter__link" href="">All Filters</a>
+                <span>Showing 247 Bikes</span>
+            </div>
+            <div class="collection-filter__col">
+                <span>Sort by</span>
+                <div class="select-field select-field--collection-filter">
+                    <select class="js-select-sizes">
+                        <option>The Scout</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option disabled="">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <p class="select-field__message is-hidden">
+                        Please select size!
+                    </p>
+                </div>
+                <a class="collection-filter__trigger js-grid-trigger" href="">
+                    {% render 'icon', icon: 'filter-grid' %}
+                </a>
+                <a class="collection-filter__trigger js-list-trigger" href="">
+                    {% render 'icon', icon: 'filter-list' %}
+                </a>
+            </div>
+        </div>
+        <ul class="collection-filter__tags">
+            <li>
+                <span>Scout</span>
+                <a href="">{% render 'icon', icon: 'small-close' %}</a>
+            </li>
+            <li>
+                <span>Nomad</span>
+                <a href="">{% render 'icon', icon: 'small-close' %}</a>
+            </li>
+            <li>
+                <span>High Step II</span>
+                <a href="">{% render 'icon', icon: 'small-close' %}</a>
+            </li>
+            <li class="clear">
+                <a href="">
+                    <span>Clear All</span>
+                </a>
+            </li>
+        </ul>
+        <div class="collection-filter__inner js-grid-list-wrapper collection-grid">
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__inner-item collection-filter__inner-item--empty">
+                <div class="wrapper">
+                    <h3>Everyone has a perfect Magnum match.</h3>
+                    <a href="">HELP ME CHOOSE
+                        {% render 'icon', icon: 'arrow-up-right' %}
+                    </a>
+                </div>
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+            <div class="collection-filter__item">
+                {% render 'collection-product-card.liquid' %}
+            </div>
+        </div>
+        <ul class="collection-filter__pagination">
+          <li>
+            <a href="">{% render 'icon', icon: 'arrow-left' %}</a>
+          </li>
+          <li>
+             <a href="" class="btn active">1</a>
+          </li>
+           <li>
+             <a href="" class="btn">2</a>
+          </li>
+           <li>
+             <a href="" class="btn">3</a>
+          </li>
+           <li>
+            <a href="">{% render 'icon', icon: 'arrow-right' %}</a>
+          </li>
+        </ul>
+    </div>
+</section>

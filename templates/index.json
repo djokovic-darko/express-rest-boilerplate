@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "product-gallery": {
+      "type": "product-gallery"
+    },
+    "service": {
+      "type": "service"
+    },
+    "cta": {
+      "type": "cta"
+    },
+    "premium-high": {
+      "type": "premium-high"
+    },
+    "component-overview": {
+      "type": "component-overview"
+    },
+    "videos-tab": {
+      "type": "videos-tab"
+    },
+    "battery-section": {
+      "type": "battery-section"
+    },
+    "battery-section-reverse": {
+      "type": "battery-section-reverse"
+    },
+    "carousel-slider": {
+      "type": "carousel-slider"
+    },
+    "explore": {
+      "type": "explore"
+    },
+    "cta-section": {
+      "type": "cta-section"
+    },
+    "measures": {
+      "type": "measures"
+    },
+    "gallery": {
+      "type": "gallery"
+    },
+    "compare": {
+      "type": "compare"
+    }
+  },
+  "order": [
+    "product-gallery",
+    "service",
+    "cta",
+    "premium-high",
+    "component-overview",
+    "videos-tab",
+    "battery-section",
+    "battery-section-reverse",
+    "carousel-slider",
+    "explore",
+    "cta-section",
+    "measures",
+    "gallery",
+    "compare"
+  ]
+}

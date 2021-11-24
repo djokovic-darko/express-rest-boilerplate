@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ 'section-main-account.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-main-account.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="account o-container --medium" data-section-id="{{- section.id -}}"></div>
+
+{% schema %}
+{
+  "name": "t:sections.account.name",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

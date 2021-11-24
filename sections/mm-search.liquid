@@ -1,0 +1,27 @@
+<section class="mm-search">
+  <div class="container container--small">
+    <div class="mm-search__inner">
+      <div class="mm-search__content">
+        <div class="mm-search__search-field">
+          <input type="text" placeholder="Type to search...">
+          {% render 'icon', icon: 'search-line' %}
+        </div>
+        <div class="mm-search__search-results">
+          <p>Showing 247 Bikes</p>
+        </div>
+      </div>
+    </div>
+    <div class="mm-search__grid">
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+      {% render 'mm-item-card' %}
+    </div>
+    {% render 'pagination' %}
+  </div>
+</section>

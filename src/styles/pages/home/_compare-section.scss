@@ -1,0 +1,53 @@
+.compare-section {
+  position: relative;
+  padding: rem(90) 0 rem(120);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__text {
+    flex: 0 0 38%;
+
+    .h2 {
+      font-size: rem(40);
+      line-height: rem(56);
+      padding-bottom: rem(5);
+    }
+
+    .h5 {
+      font-size: rem(24);
+      line-height: rem(34);
+      color: $grey-light;
+      padding-bottom: rem(14);
+      font-weight: 400;
+    }
+
+    p {
+      max-width: rem(328);
+      width: 100%;
+      color: $grey-light;
+      padding-bottom: rem(30);
+    }
+  }
+  &__cta {
+    a {
+      display: flex;
+      align-items: flex-start;
+      font-size: rem(14);
+      line-height: rem(32);
+      text-transform: uppercase;
+      font-weight: 700;
+      .icon {
+        height: 16px;
+        width: 16px;
+        margin-top: rem(2);
+        margin-left: rem(5);
+      }
+    }
+  }
+}

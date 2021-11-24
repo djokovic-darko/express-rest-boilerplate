@@ -1,0 +1,19 @@
+{
+    "sections": {
+      "hero": {
+        "type": "mm-hero"
+      },
+      "search-item": {
+        "type": "mm-search"
+      },
+      "top-question": {
+        "type": "top-question"
+      }  
+    },
+    "order": [
+      "hero",
+      "search-item",
+      "top-question"
+    ]
+  }
+  

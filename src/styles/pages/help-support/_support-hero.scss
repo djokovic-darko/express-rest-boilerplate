@@ -1,0 +1,37 @@
+.support-hero {
+  padding: rem(90) 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: rem(392);
+    width: 100%;
+
+    h1 {
+      margin-bottom: rem(10);
+      font-size: rem(40);
+      line-height: line-height(40, 56);
+      font-weight: 700;
+      color: $machine-grey;
+    }
+    p {
+      font-size: rem(16);
+      line-height: line-height(16, 28);
+      color: $machine-grey;
+      margin-bottom: rem(27);
+    }
+  }
+
+  &__image {
+    max-width: rem(498);
+    width: 100%;
+
+    .media-wrapper {
+      padding-bottom: 84.33%;
+    }
+  }
+}

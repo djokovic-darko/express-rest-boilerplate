@@ -1,0 +1,62 @@
+<section class="explore-product" style="background: url('../assets/gallery-1.jpg') no-repeat; background-position:center center;">
+  {% render 'click-to-explore-widgete' %}
+</section>
+<div class="explore-popup js-explore-popup">
+  <div class="explore">
+    <div class="explore__inner">
+      {% for i in (1..4) %}
+      <div class="explore-popup__box js-popup-box" data-target="{{ forloop.index }}">
+        <div class="explore__thumbs">
+          <div class="explore__title">
+            <h1 class="h3">THE REAR CARRIER </h1>
+          </div>
+          <div thumbsslider class="swiper-container js-explore-thumb">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://i.ibb.co/B4Tgy1t/thumb1.jpg" loading="lazy" width="" height="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/376x237.jpg?text=Slide2" loading="lazy" width="" height=""/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/376x237.jpg?text=Slide3" loading="lazy" width="" height=""/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/376x237.jpg?text=Slide4" loading="lazy" width="" height=""/>
+              </div>
+            </div>
+            <div class="explore__arrows">
+              <div class="js-explore-arrow-prev btn__nav btn__nav--prev">{% render 'icon', icon: 'arrow-left' %}</div>
+              <div class="js-explore-arrow-next btn__nav btn__nav--next">{% render 'icon', icon: 'arrow-right' %}</div>
+            </div>
+          </div>
+          <div class="explore__text">
+            <h2 class="h5">Carry More </h2>
+            <p> Rear carrier rack to support up to 55 lbs. Bungee strap included.
+              Third Row Test.</p>
+          </div>
+        </div>
+        <div class="explore__slider">
+          <div class="swiper-container js-explore-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://i.ibb.co/4g5sQf3/Screenshot-2021-11-18-at-10-59-01.jpg" loading="lazy" width="" height=""/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/912x728.jpg?text=Slide2" loading="lazy" width="" height=""/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/912x728.jpg?text=Slide3" loading="lazy" width="" height=""/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/912x728.jpg?text=Slide4" loading="lazy" width="" height=""/>
+              </div>
+            </div>
+          </div>
+          <a class="btn__nav btn__nav--close-preview js-close-explore" href="#"> {% render 'icon', icon: 'close' %}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

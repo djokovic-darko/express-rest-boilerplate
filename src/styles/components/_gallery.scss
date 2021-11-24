@@ -1,0 +1,76 @@
+.gallery {
+  padding: rem(70) 0 rem(44);
+  background-color: #272526;
+  overflow: hidden;
+
+  &__title {
+    .h4 {
+      font-size: rem(14);
+      line-height: rem(32);
+      color: $grey-light;
+      text-transform: uppercase;
+      padding: 0 0 rem(34) rem(169);
+    }
+  }
+
+  &__item {
+    img {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+
+  .swiper-container {
+    overflow: visible;
+    padding: 0 rem(169);
+    position: relative;
+  }
+
+  &__arrows {
+    max-width: rem(112);
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(33);
+
+    .btn__nav {
+      width: rem(50);
+      height: rem(50);
+      border-radius: 50%;
+      border: 1px solid $grey-light-2;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: $t-hover;
+
+      &--prev {
+        &:hover {
+          .icon {
+            margin-left: rem(-6);
+          }
+        }
+      }
+
+      &--next {
+        &:hover {
+          .icon {
+            margin-right: rem(-6);
+          }
+        }
+      }
+    }
+
+    .icon {
+      transition: $t-hover;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+}

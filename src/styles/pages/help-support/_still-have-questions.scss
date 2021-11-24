@@ -1,0 +1,45 @@
+.still-have-questions {
+  padding: rem(90) 0;
+  background-color: $grey-light-7;
+
+  &__title {
+    padding-bottom: rem(60);
+
+    h1 {
+      font-size: rem(56);
+      line-height: line-height(56, 64);
+      font-weight: 700;
+      color: $machine-grey;
+    }
+  }
+
+  &__image {
+    padding-bottom: 32.72%;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(90) 14.056vw 0;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    .icon {
+      margin-bottom: rem(15);
+    }
+    h3 {
+      margin-bottom: rem(5);
+      font-size: rem(22);
+      line-height: line-height(22, 32);
+      font-weight: 700;
+      color: $machine-grey-1;
+    }
+    a {
+      font-size: rem(16);
+      line-height: line-height(16, 28);
+      color: $grey-2;
+    }
+  }
+}

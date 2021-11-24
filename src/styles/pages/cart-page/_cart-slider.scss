@@ -1,0 +1,13 @@
+.cart-slider {
+  display: none;
+  width: rem(60);
+  height: rem(345);
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  .swiper-wrapper {
+    height: rem(345);
+  }
+}

@@ -1,0 +1,112 @@
+.carousel-slider {
+  padding: rem(90) 0 rem(90) rem(63);
+  background-color: #272526;
+  cursor: none;
+  overflow: hidden;
+
+  &__item {
+    position: relative;
+    overflow-y: hidden;
+
+    .media-wrapper {
+      padding-bottom: 100%;
+      user-select: none;
+    }
+
+    &:hover {
+      .carousel-slider__text {
+        transform: translateZ(0);
+        will-change: transform;
+        opacity: 1;
+        display: block;
+
+        p,
+        strong {
+          transition-delay: 0.2s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__text {
+    max-width: rem(390);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(48%);
+    left: rem(40);
+    will-change: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease, ease;
+    transition-property: all;
+    transition-timing-function: 1s;
+
+    strong,
+    p {
+      color: $white;
+      transition: opacity 0.5s ease;
+      transition-duration: 0.6s;
+      transition-timing-function: ease, ease;
+      transition-property: all;
+      opacity: 0;
+    }
+
+    strong {
+      display: inline-block;
+      font-weight: 700;
+      font-size: rem(20);
+      line-height: rem(26);
+      padding-bottom: rem(10);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: rem(15);
+      line-height: rem(24);
+
+      span {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .swiper-container {
+    overflow: visible;
+    padding-right: rem(266);
+    position: relative;
+    padding-bottom: rem(60);
+  }
+
+  &__scrollbar {
+    width: 100% !important;
+    border-radius: rem(12);
+    height: 3px !important;
+    background-color: $grey-light;
+
+    .swiper-scrollbar-drag {
+      width: 438px !important;
+      background: linear-gradient(
+        90deg,
+        #26bbee 0.46%,
+        rgba(38, 187, 238, 0) 100%
+      ) !important;
+    }
+  }
+
+  .cursor {
+    transition: all 100ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

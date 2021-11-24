@@ -1,0 +1,55 @@
+.about {
+  padding-bottom: rem(30);
+
+  h1 {
+    font-size: rem(24);
+    line-height: line-height(24, 21);
+    letter-spacing: 1px;
+    margin-bottom: rem(70);
+  }
+
+  &__image {
+    display: block;
+    padding: rem(251) 0;
+    background-size: cover;
+    background-position: center left;
+
+    @include media-breakpoint-up(md) {
+      padding: rem(256) 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: rem(41);
+      line-height: line-height(41, 49);
+      letter-spacing: rem(6);
+      font-family: $font-bold;
+
+      @include media-breakpoint-up(md) {
+        font-size: rem(71);
+        line-height: line-height(71, 88);
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding: rem(20) rem(10) 0;
+
+    @include media-breakpoint-up(md) {
+      max-width: rem(920);
+      margin: 0 auto;
+    }
+    p {
+      font-size: rem(28);
+      line-height: line-height(28, 44);
+      font-family: $font-light;
+      margin-bottom: rem(40);
+
+      @include media-breakpoint-up(md) {
+        font-size: rem(32);
+        line-height: line-height(32, 44);
+      }
+    }
+  }
+}

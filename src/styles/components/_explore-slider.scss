@@ -1,0 +1,163 @@
+.explore {
+  &__inner {
+    // display: flex;
+  }
+
+  &__thumbs {
+    width: 33.4%;
+    background-color: $machine-grey;
+    padding: rem(115) rem(44) rem(46);
+    position: relative;
+
+    .swiper-container {
+      padding: 0 rem(44);
+      overflow: visible;
+      margin: 0 rem(-44);
+    }
+  }
+
+  &__title {
+    padding-bottom: rem(58);
+
+    .h3 {
+      font-size: rem(24);
+      line-height: rem(26);
+      color: $white;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 7%;
+
+    .h5 {
+      font-size: rem(17);
+      line-height: rem(26);
+      color: $white;
+      padding-bottom: rem(10);
+    }
+
+    p {
+      font-size: rem(15);
+      line-height: rem(25);
+      color: $white;
+      max-width: rem(305);
+    }
+  }
+
+  &__slider {
+    width: 66.6%;
+    position: relative;
+  }
+
+  &__arrows {
+    max-width: rem(112);
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(22);
+
+    .icon {
+      transition: $t-hover;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  .btn__nav {
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    border: 1px solid $grey-light-2;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: $t-hover;
+
+    &--close-preview {
+      background-color: rgba($grey-light-2, 0.15);
+      border: none;
+      position: absolute;
+      right: rem(40);
+      top: rem(40);
+      z-index: 1;
+
+      svg {
+        pointer-events: none;
+      }
+    }
+
+    &--prev {
+      &:hover {
+        .icon {
+          margin-left: rem(-6);
+        }
+      }
+    }
+
+    &--next {
+      &:hover {
+        .icon {
+          margin-right: rem(-6);
+        }
+      }
+    }
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .btn-close-preview {
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    border: 1px solid $grey-light-2;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: $t-hover;
+  }
+}
+
+.explore-popup {
+  opacity: 0;
+  height: 0;
+  transition: opacity $t-hover;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
+    z-index: 101;
+  }
+
+  &__box {
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+.explore-product {
+  .circle-slide-open {
+    cursor: pointer;
+  }
+
+  .circle-slide-small {
+    pointer-events: none;
+  }
+}

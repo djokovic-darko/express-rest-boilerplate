@@ -1,0 +1,11 @@
+.component-overview {
+  padding: rem(90) 0;
+  &__title {
+    padding-bottom: rem(54);
+    .h2 {
+      font-size: rem(40);
+      line-height: rem(56);
+      color: $machine-grey;
+    }
+  }
+}

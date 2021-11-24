@@ -1,0 +1,134 @@
+.goals {
+  padding-bottom: rem(115);
+
+  &__info,
+  &__wrapper {
+    p {
+      font-weight: 500;
+      font-size: rem(14);
+      font-family: $headline-font;
+      line-height: line-height(14, 24);
+    }
+
+    p,
+    h4 {
+      letter-spacing: 1px;
+    }
+  }
+
+  &__info {
+    padding: rem(70) 0 rem(80);
+    width: 100%;
+    max-width: rem(524);
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      padding-top: rem(90);
+    }
+  }
+
+  &__wrapper {
+    padding: 0 rem(25);
+
+    @include media-breakpoint-up(md) {
+      padding: 0;
+      max-width: rem(1170);
+      margin: 0 auto;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &--second {
+        @include media-breakpoint-up(md) {
+          flex-direction: row-reverse;
+          transform: translateY(rem(-30));
+        }
+      }
+
+      &-text {
+        width: 100%;
+        margin: 0 auto;
+        padding: rem(50) 0;
+
+        @include media-breakpoint-up(md) {
+          max-width: rem(660);
+          margin: 0;
+          padding: 0;
+          text-align: left;
+        }
+
+        h4 {
+          font-size: rem(16);
+          line-height: line-height(16, 24);
+        }
+      }
+
+      img {
+        @include media-breakpoint-up(md) {
+          max-width: rem(357);
+        }
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-row-gap: rem(65);
+    grid-column-gap: rem(10);
+    padding: rem(50) 0 rem(65);
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(3, minmax(auto, 1fr));
+      padding-top: rem(150);
+      max-width: rem(1170);
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(5, minmax(auto, 1fr));
+      grid-column-gap: 0;
+      padding-bottom: rem(65);
+    }
+
+    .product-item {
+      img {
+        max-width: rem(190);
+      }
+    }
+  }
+
+  &__btn {
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+
+    a {
+      width: rem(235);
+      font-size: rem(13);
+      letter-spacing: 1px;
+
+      &:first-of-type {
+        margin-bottom: rem(10);
+
+        @include media-breakpoint-up(md) {
+          margin: 0 rem(5) 0 0;
+        }
+      }
+    }
+  }
+}

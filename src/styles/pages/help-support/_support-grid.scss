@@ -1,0 +1,40 @@
+.support-grid {
+  padding: rem(100) 0;
+  background-color: $off-white;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-column-gap: rem(19);
+    grid-row-gap: rem(20);
+  }
+
+  &__item {
+    border-radius: rem(10);
+    background-color: $white;
+    border: 1px solid $grey-1;
+
+    a {
+      display: block;
+      padding: rem(33) rem(25) rem(27);
+    }
+
+    .icon {
+      margin-bottom: rem(10);
+    }
+
+    h3 {
+      margin-bottom: rem(10);
+      font-size: rem(22);
+      line-height: line-height(22, 32);
+      font-weight: 700;
+      color: $machine-grey;
+      letter-spacing: -0.9px;
+    }
+    p {
+      font-size: rem(14);
+      line-height: line-height(14, 22);
+      color: $machine-grey;
+    }
+  }
+}

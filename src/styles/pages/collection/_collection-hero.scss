@@ -1,0 +1,54 @@
+.collection-hero {
+  padding: rem(185) 0;
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__col-left {
+    max-width: rem(495);
+    width: 100%;
+
+    .icon--logo-white {
+      margin-bottom: rem(15);
+    }
+
+    h1 {
+      margin-bottom: rem(20);
+      font-size: rem(64);
+      line-height: line-height(64, 64);
+      color: $off-white;
+    }
+
+    p {
+      font-size: rem(17);
+      line-height: line-height(17, 27);
+      color: $off-white;
+    }
+  }
+
+  &__col-right {
+    max-width: rem(250);
+    width: 100%;
+    margin-right: rem(52);
+  }
+
+  &__star-list {
+    li {
+      position: relative;
+      padding-left: rem(26);
+      margin-bottom: rem(20);
+      font-size: rem(15);
+      line-height: line-height(15, 25);
+      color: $off-white;
+
+      .icon--4star {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

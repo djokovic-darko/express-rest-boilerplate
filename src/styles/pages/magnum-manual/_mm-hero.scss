@@ -1,0 +1,23 @@
+.mm-hero {
+  min-height: rem(444);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: rem(400);
+    .h1 {
+      font-size: rem(40);
+      line-height: rem(56);
+      padding-bottom: 14 rem(14);
+      color: $white;
+    }
+    p {
+      font-size: rem(16);
+      line-height: rem(28);
+      color: $white;
+    }
+  }
+}

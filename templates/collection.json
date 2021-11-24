@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "collection-hero": {
+      "type": "collection-hero"
+    },
+    "collection-filter": {
+     "type": "collection-filter"
+    },
+    "find-perfect": {
+      "type": "find-perfect"
+    },
+    "fat-tire-banner": {
+      "type": "fat-tire-banner"
+    }
+  },
+  "order": [
+    "collection-hero",
+    "collection-filter",
+    "find-perfect",
+    "fat-tire-banner"
+  ]
+}

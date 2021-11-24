@@ -1,0 +1,33 @@
+// @import "../components/hamburger";
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    padding: 0 rem(25);
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+      position: relative;
+      padding-bottom: rem(5);
+      font-size: rem(13);
+      line-height: line-height(13, 26);
+      font-weight: 500;
+
+      &.is-active {
+        &:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

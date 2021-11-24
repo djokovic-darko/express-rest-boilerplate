@@ -1,0 +1,206 @@
+.select-field {
+  max-width: 100%;
+  min-width: rem(280);
+  font-size: rem(15);
+  text-align: left;
+
+  select {
+    border: 2px solid $grey-light-2;
+    border-radius: rem(3);
+    display: flex;
+    align-items: center;
+    padding: rem(14) rem(28) rem(14) rem(18);
+    background-color: $white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' role='presentation' class='icon icon--wide icon-chevron-down' viewBox='0 0 498.98 284.49'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23231f20%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M80.93 271.76A35 35 0 0 1 140.68 247l189.74 189.75L520.16 247a35 35 0 1 1 49.5 49.5L355.17 511a35 35 0 0 1-49.5 0L91.18 296.5a34.89 34.89 0 0 1-10.25-24.74z' transform='translate(-80.93 -236.76)'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: rem(10) rem(10);
+    background-position-y: center;
+    background-position-x: calc(100% - #{rem(20)});
+    font-size: rem(16);
+    line-height: line-height(16, 19);
+    // font-family: $headline-font;
+
+    @include media-breakpoint-up(lg) {
+      font-size: rem(14);
+      line-height: line-height(16, 17);
+    }
+  }
+
+  > button {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(50);
+    padding: 0 rem(20);
+    border: rem(1) solid currentColor;
+    border-radius: rem(33);
+    background: transparent;
+    z-index: 2;
+    pointer-events: auto;
+    overflow: hidden;
+    transition: background-color $t-basic;
+
+    & * {
+      pointer-events: none;
+    }
+
+    .icon {
+      width: rem(24);
+      height: rem(24);
+      transition: transform 0.3s;
+      margin-left: rem(10);
+    }
+
+    .placeholder-text {
+      position: relative;
+      display: block;
+      padding-right: rem(5);
+      white-space: nowrap;
+
+      .fake-text {
+        opacity: 0;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+    }
+  }
+
+  .dropdown-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    visibility: hidden;
+    transition: visibility $t-basic, padding 0.25s ease-out;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 3;
+    padding-top: rem(2);
+
+    .items {
+      background: $white;
+      overflow-x: hidden;
+      overflow-y: auto;
+      max-width: calc(100% - #{rem(40)});
+      max-height: rem(255);
+      color: $black;
+      border: rem(1) solid $black;
+      margin: 0 auto;
+
+      .item {
+        position: relative;
+        display: block;
+        padding: rem(12) rem(20);
+        background: transparent;
+        transition: background $t-basic;
+        font-size: inherit;
+        line-height: 1.3;
+        z-index: 1;
+        text-align: left;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+          padding: rem(13) rem(30);
+        }
+
+        @include hover() {
+          background: var(--accent-color);
+        }
+
+        &.active {
+          background: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  &.open {
+    > button {
+      .icon {
+        transform: scaleY(-1);
+      }
+    }
+
+    .dropdown-items {
+      pointer-events: auto;
+      visibility: visible;
+      padding-top: rem(10);
+
+      .item {
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &.has-error {
+    .placeholder {
+      color: red;
+    }
+  }
+
+  &__message {
+    display: block;
+    font-size: rem(14);
+    line-height: line-height(14, 21);
+    // font-family: $headline-font;
+    margin-top: rem(5);
+    color: red;
+    text-align: center;
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+
+  // &--product {
+  //   width: rem(95);
+  //   min-width: auto;
+  //   height: rem(25);
+
+  //   select {
+  //     font-size: rem(11);
+  //     // font-family: $font-light;
+  //     letter-spacing: rem(1);
+  //     padding: 0 rem(3) 0 0;
+  //     border: none;
+  //     background-color: transparent;
+  //     text-align: center;
+  //   }
+  // }
+  &--compare {
+    width: 100%;
+    max-width: rem(305);
+    height: rem(48);
+    min-width: auto;
+    padding: 0 rem(19);
+    select {
+      border-radius: rem(40);
+    }
+  }
+  &--collection-filter {
+    min-width: auto;
+
+    select {
+      border: transparent;
+      padding: 0 rem(13) 0 0;
+      background-position: center right;
+    }
+  }
+}
+
+// form {
+//   .select-field {
+//     width: 100%;
+//   }
+// }

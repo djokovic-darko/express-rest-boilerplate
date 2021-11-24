@@ -1,0 +1,53 @@
+.subfooter {
+  min-height: rem(579);
+  height: 100%;
+  position: relative;
+
+  &__inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 rem(169) rem(30);
+    ul {
+      display: flex;
+
+      li {
+        &:not(:last-child) {
+          margin-right: rem(50);
+        }
+
+        a {
+          font-size: rem(14);
+          line-height: rem(24);
+          color: $white;
+          transition: $t-hover;
+          &:hover {
+            color: $cyan;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: rem(14);
+      line-height: rem(24);
+      color: $white;
+    }
+  }
+  .back-to-top {
+    position: absolute;
+    display: inline-block;
+    top: rem(82);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(120);
+    height: rem(120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $cyan;
+    border-radius: 50%;
+  }
+}

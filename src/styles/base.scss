@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+
+//#######################################
+//## VARIABLES ##########################
+//#######################################
+@import 'utility/variables/colors';
+@import 'utility/variables/fonts';
+@import 'utility/variables/transitions';
+
+//#######################################
+//## MIXINS #############################
+//#######################################
+@import 'utility/mixins/typography-sizes';
+@import 'utility/mixins/breakpoints';
+@import 'utility/mixins/hover';
+@import 'utility/mixins/overlay';
+@import 'utility/mixins/browser';
+@import 'utility/mixins/ratio';
+@import 'utility/mixins/placeholder';
+@import 'utility/mixins/hide-scrollbar';
+@import 'utility/mixins/line-height';
+
+//#######################################
+//## BASE ###############################
+//#######################################
+@import 'base/reset';
+// @import "base/fonts";
+@import 'base/html';
+@import 'base/typography';
+@import 'base/container';
+@import 'base/general';
+
+//#######################################
+//## UTILITIES ##########################
+//#######################################
+@import 'utility/utility-classes';
+@import 'utility/text-content';
+@import 'utility/line-link';
+
+//#######################################
+//## LAYOUT #############################
+//#######################################
+@import 'layout/loader';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/subfooter';
+@import 'layout/cta';
+
+//#######################################
+//## COMPONENTS #########################
+//#######################################
+@import 'components/btn';
+@import 'components/wishlist-modal';
+@import 'components/accordion';
+@import 'components/tabs';
+@import 'forms/input';
+@import 'components/product-radio';
+@import 'components/breadcrumbs';
+@import 'components/carousel-slider';
+@import 'components/gallery';
+@import 'components/explore-slider';
+@import 'forms/radio';
+@import 'forms/custom-select';
+@import 'forms/search';
+@import 'components/compare-product-card';
+@import 'components/choose-color';
+@import 'components/IncDecInput';
+
+//#######################################
+//## MODULES #########################
+//#######################################
+@import 'modules/pagination';
+@import 'modules/text-image';
+
+//#######################################
+//## PAGES ##############################
+//#######################################
+@import 'pages/home/main';
+@import 'pages/comparison-e-bikes/main';
+@import 'pages/pricelist/main';
+@import 'pages/home/main';
+@import 'pages/comparison-e-bikes/main';
+@import 'pages/collection/main';
+@import 'pages/collection-grid/main';
+@import 'pages/help-support/main';
+@import 'pages/magnum-manual/main';
+
+@import 'plugins/core/swiper-core.css';

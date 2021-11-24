@@ -1,0 +1,71 @@
+.compare-bikes {
+  padding-top: rem(79);
+
+  &__go-back {
+    font-size: rem(16);
+    line-height: line-height(16, 32);
+    font-weight: 700;
+    .icon--arrow-left {
+      margin-right: rem(9);
+      path {
+        fill: $cyan;
+      }
+    }
+  }
+
+  &__title {
+    padding: rem(23) 0 rem(40);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $divider-grey;
+    li {
+      border-bottom: 3px solid transparent;
+      margin-right: rem(15);
+      margin-bottom: rem(-2);
+      padding-bottom: rem(13);
+      color: $text-grey;
+      font-size: rem(15);
+      line-height: line-height(15, 15);
+
+      &:first-child {
+        margin-right: auto;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        color: $magnum-black;
+        font-weight: 700;
+        border-color: $cyan;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: rem(40);
+  }
+
+  &__item {
+    max-width: auto;
+    width: 100%;
+
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      .compare-product-card__inner {
+        background: linear-gradient(
+          180deg,
+          rgba(248, 248, 248, 0) 0%,
+          #f8f8f8 17.19%
+        );
+      }
+    }
+  }
+}
