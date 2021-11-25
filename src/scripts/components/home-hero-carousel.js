@@ -1,5 +1,5 @@
 // Import Swiper and modules
-import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
+import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper'
 
 // Now you can use Swiper
 const swiper = new Swiper('.swiper', {
@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }
-});
+  },
+})
 
 console.log('TEST!')
